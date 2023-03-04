@@ -1,5 +1,8 @@
 language: python
 
+script: 
+ - echo "Script Test" 
+
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
