@@ -1,1 +1,10 @@
 language: python
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $access-key-id
+  secret_access_key: $secret-access-key
+  region: "us-west-2"
+  app: "testapplication"
+  env: "poll-env"
+  bucket_name: "elasticbeanstalk-us-west-2-260847186174"
